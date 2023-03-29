@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFCF7"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="музло, тут 5 песенок"
+        android:textColor="#B55807"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textOut"
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="21dp"
+        android:background="#FFF4CD"
+        android:gravity="center"
+        android:hint="пока ниче не играет"
+        android:textColor="#9E590E"
+        android:textColorHint="#BD6C14"
+        android:textSize="19sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textOut" >
+
+        <ImageButton
+            android:id="@+id/btnResume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F49F05"
+            android:padding="14dp"
+            android:onClick="onClick"
+			android:src="@drawable/play" />
+
+        <ImageButton
+            android:id="@+id/btnPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F49F05"
+            android:padding="14dp"
+            android:onClick="onClick"
+			android:src="@drawable/pause" />
+
+        <ImageButton
+            android:id="@+id/btnStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F49F05"
+            android:padding="14dp"
+            android:onClick="onClick"
+			android:src="@drawable/stop" />
+    </LinearLayout>
+	
+	<LinearLayout
+		android:id="@+id/frameLayout"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" >
+		
+		<ImageButton
+            android:id="@+id/oneSong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F49F05"
+            android:padding="14dp"
+            android:onClick="onSongClick"
+			android:src="@drawable/a1_song" />
+
+        <ImageButton
+            android:id="@+id/twoSong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F49F05"
+            android:padding="14dp"
+            android:onClick="onSongClick"
+			android:src="@drawable/a2_song" />
+
+        <ImageButton
+            android:id="@+id/threeSong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F49F05"
+            android:padding="14dp"
+            android:onClick="onSongClick"
+			android:src="@drawable/a3_song" />
+
+        <ImageButton
+            android:id="@+id/fourSong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#CD7402"
+            android:padding="14dp"
+            android:onClick="onSongClick"
+			android:src="@drawable/a4_song" />
+
+        <ImageButton
+            android:id="@+id/fiveSong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#CD7402"
+            android:padding="14dp"
+            android:onClick="onSongClick" 
+			android:src="@drawable/a5_song" />
+	</LinearLayout>	
+	
+</androidx.constraintlayout.widget.ConstraintLayout>

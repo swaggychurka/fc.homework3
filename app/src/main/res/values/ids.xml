@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<item type="id" name="textView" />
+	<item type="id" name="textOut" />
+	<item type="id" name="linearLayout" />
+	<item type="id" name="btnResume" />
+	<item type="id" name="btnPause" />
+	<item type="id" name="btnStop" />
+	<item type="id" name="frameLayout" />
+	<item type="id" name="oneSong" />
+	<item type="id" name="twoSong" />
+	<item type="id" name="threeSong" />
+	<item type="id" name="fourSong" />
+	<item type="id" name="fiveSong" />
+</resources>
